@@ -104,6 +104,13 @@ main {
   .footer_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2.2rem;
+  }
+
+  .footer_1-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
   }
 
   .foriside_1-1 {
@@ -151,7 +158,6 @@ main {
 
   .semester_tekst {
     display: grid;
-    justify-items: center;
   }
 
   .flex_knapper {

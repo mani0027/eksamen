@@ -14,27 +14,26 @@ img {
 
 .playfair-display {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
+
   font-weight: 600;
   font-style: normal;
 }
 
 .lora {
   font-family: "Lora", serif;
-  font-optical-sizing: auto;
+
   font-weight: 400;
   font-style: normal;
 }
 
 .raleway {
   font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+
   font-weight: 600;
   font-style: normal;
 }
 .raleway {
   font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -71,19 +70,30 @@ h1 img {
 h2 {
   text-align: left;
   font-size: 1.25rem;
-
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
-  color: #de7d7c;
+  color: #de7674;
 }
 
 h3 {
-  text-align: center;
   font-size: 1.25rem;
   max-width: 800px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
+  margin-left: 0.3rem;
   font-family: "Raleway", sans-serif;
   color: #5b0c21;
+}
+
+.h3_uddannelse {
+  margin-bottom: -1rem;
+}
+
+.grid_1-1 h3 {
+  margin-left: 2.1rem;
+}
+
+.tekst_om_mig p {
+  margin-top: 0.3rem;
 }
 
 .tekst_forside {
@@ -95,10 +105,9 @@ h3 {
 }
 
 .tekst_om_mig {
-  text-align: center;
   margin-top: 3px;
   margin-bottom: 60px;
-
+  padding: 2rem;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   color: #de7d7c;
@@ -120,6 +129,10 @@ p {
   gap: 50px;
 }
 
+.semester_tekst {
+  padding: 2rem;
+}
+
 /******************* Billeder *****************/
 
 .portraet {
@@ -138,16 +151,12 @@ p {
 .waves {
   background: #f1cfbb url(billeder/nybaggrund1.svg) no-repeat bottom;
   background-size: 101%;
-  height: 63px;
+  height: 70px;
   margin-block: 20px;
 }
 
 body {
   background-color: #f1cfbb;
-}
-
-.mine_projekter_baggrund {
-  background-position: 5%;
 }
 
 /****************** Knapper *******************/
@@ -159,6 +168,7 @@ body {
   margin: 40%;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+  text-wrap: nowrap;
 }
 
 .flex_knapper a {
@@ -192,6 +202,28 @@ body {
 
 footer {
   background-color: #5b0c21;
+  padding: 0.9rem;
+}
+
+.playfair_font {
+  font-family: "Playfair Display", serif;
+  color: #f1cfbb;
+  font-size: 2rem;
+}
+
+.raleway_font {
+  font-family: "Raleway", sans-serif;
+  color: #f1cfbb;
+  font-size: 1.5rem;
+}
+
+footer img {
+  height: 45px;
+  margin-top: 0.6rem;
+}
+
+.info_footer {
+  margin-top: 1.1rem;
 }
 
 /*************** Menuen er fra undervisningen ****************/
@@ -374,6 +406,15 @@ nav {
     font-size: 4.5rem;
   }
 
+  .h1_mobil {
+    font-size: 4.5rem;
+  }
+
+  .h1_web {
+    margin-top: 10rem;
+    font-size: 5.5rem;
+  }
+
   h1 img {
     width: 3.4rem;
   }
@@ -381,7 +422,29 @@ nav {
     margin-top: 0rem;
   }
 
+  .h3_uddannelse {
+    margin-top: 4rem;
+  }
+
+  .tekst_forside {
+    font-size: 1.5rem;
+  }
+
   .waves {
-    height: 200px;
+    height: 220px;
+  }
+
+  footer img {
+    height: 50px;
+  }
+
+  .info_footer {
+    margin-top: 0rem;
+  }
+  .playfair_font {
+    font-size: 3rem;
+  }
+  .raleway_font {
+    font-size: 2rem;
   }
 }
