@@ -1,0 +1,387 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Fonte ******************/
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/********** Styling af tekst **************/
+
+/**** Husk at rette alt margin til fonte fra px til rem ****/
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.69rem;
+  font-family: "Playfair Display", serif;
+  color: #5b0c21;
+}
+
+h1 img {
+  width: 1.33rem;
+  height: auto;
+  display: inline;
+}
+
+.h1_mobil {
+  font-size: 2.3rem;
+}
+
+.h1_web {
+  font-family: "Playfair Display", serif;
+  color: #5b0c21;
+  font-size: 3.9rem;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.25rem;
+
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #de7d7c;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin-bottom: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #5b0c21;
+}
+
+.tekst_forside {
+  text-align: center;
+  margin-top: 3px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #de7d7c;
+}
+
+.tekst_om_mig {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 60px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: #de7d7c;
+}
+
+.laerings_tekst {
+  text-align: center;
+  font-family: "Lora", serif;
+  color: #de7d7c;
+  padding: 2rem;
+}
+
+p {
+  color: #de7d7c;
+  max-width: 65ch;
+}
+
+.process_afsnit {
+  gap: 50px;
+}
+
+/******************* Billeder *****************/
+
+.portraet {
+  padding: 3.5rem;
+}
+
+.img_projekt {
+  padding: 3.5rem;
+}
+
+.tema_main img {
+  margin-top: 3.5rem;
+}
+
+/************ Baggrundsbillede ********/
+.waves {
+  background: #f1cfbb url(billeder/nybaggrund1.svg) no-repeat bottom;
+  background-size: 101%;
+  height: 63px;
+  margin-block: 20px;
+}
+
+body {
+  background-color: #f1cfbb;
+}
+
+.mine_projekter_baggrund {
+  background-position: 5%;
+}
+
+/****************** Knapper *******************/
+.temalink {
+  color: #fef4ea;
+  border-radius: 20px;
+  background-color: #5b0c21;
+  padding: 15px;
+  margin: 40%;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.flex_knapper a {
+  background-color: #5b0c21;
+  border-radius: 20px;
+  color: #fef4ea;
+  padding: 15px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+}
+.flex_knapper a:hover {
+  background-color: #de7d7c;
+}
+
+/*************** Styling af grids ************/
+
+.grid_1-1 {
+  margin: auto;
+}
+
+.grid_3-2 {
+  padding: 45px;
+}
+
+.grid_2-3 {
+  padding: 45px;
+}
+
+/***************** Footer **************/
+
+footer {
+  background-color: #5b0c21;
+}
+
+/*************** Menuen er fra undervisningen ****************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1cfbb;
+  font-family: "Raleway", sans-serif;
+}
+
+header .logo a {
+  color: #333333;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #5b0c21;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #de7d7c;
+}
+
+.menu a.active {
+  color: #5b0c21;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
+
+/*************** Burgermenu ***********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1cfbb;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  margin-right: 5.2rem;
+  color: #5b0c21;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #de7d7c;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #5b0c21;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #f1cfbb;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h1 img {
+    width: 3.4rem;
+  }
+  .tema_main img {
+    margin-top: 0rem;
+  }
+
+  .waves {
+    height: 200px;
+  }
+}

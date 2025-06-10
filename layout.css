@@ -1,0 +1,161 @@
+.grid_1-1_kode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/*********** Overlab ***********/
+
+.grid_overlap1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 4fr 3fr 4fr;
+}
+
+.over1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.under1 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.grid_overlap2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 4fr 3.5fr 4fr;
+}
+
+.over2 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.under2 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.grid_overlap3 {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 1fr;
+  grid-template-rows: 4fr 4fr 4fr;
+}
+.over3 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.under3 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.grid_overlap4 {
+  display: grid;
+  grid-template-columns: 1.7fr 2fr 1.9fr;
+  grid-template-rows: 4fr 3.9fr 4fr;
+}
+
+.grid_overlap5 {
+  display: grid;
+  grid-template-columns: 1.9fr 1.9fr 2fr;
+  grid-template-rows: 4.8fr 10fr 4fr;
+  gap: 10px;
+}
+
+/********* Knapper *********/
+
+.flex_knapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 1.7rem;
+  margin-left: 2.8rem;
+}
+
+.flex_ikoner {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+/************ Desktop ********/
+@media (min-width: 800px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foriside_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .om_mig_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 2;
+  }
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    justify-items: center;
+  }
+
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    justify-items: center;
+  }
+
+  .order-1 {
+    order: -1;
+  }
+
+  .order1 {
+    order: 1;
+  }
+
+  .semester_tekst {
+    display: grid;
+    justify-items: center;
+  }
+
+  .flex_knapper {
+    margin-left: 7rem;
+    margin-bottom: 4rem;
+  }
+}
